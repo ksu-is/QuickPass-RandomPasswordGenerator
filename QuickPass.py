@@ -9,12 +9,23 @@ def main():
 
     while True:
         try:           
-            
-
-amount = int(input("Amount of passwords to generate: "))
-
-length = int(input("Enter desired password length: "))
-
+            amount = int(input("Amount of passwords to generate: "))
+            if amount <= 0: 
+                print("Must enter a positive integer to continue."
+            else:           
+                 break
+        except ValueError:
+            print("Must enter valid integer to continue.")
+    while True:
+        try:
+            length = int(input("Enter desired password length: "))
+            if length <= 0:
+                 print("Must enter a positive integer to continue."
+            else:           
+                 break
+        except ValueError:
+            print("Must enter valid integer to continue.")
+                  
 print('''Choose character set for password :
           1. Numbers
           2. Letters
