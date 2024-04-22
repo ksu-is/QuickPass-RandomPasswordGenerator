@@ -26,9 +26,16 @@ def main():
         except ValueError:
             print("Must enter valid integer to continue.")
                   
-print('''Choose character set for password :
+print('''Choose character set for password:
           1. Numbers
           2. Letters
           3. Punctuation
           4. Exit''')
 
+print('\nHere are your passwords: ')
+
+for pwd in range(amount):
+    password = ''
+    for c in range(length):
+        passwords += random.choice(Numbers, Letters, Punctuation)
+    print(passwords)
