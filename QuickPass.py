@@ -5,7 +5,7 @@ print("Welcome to QuickPass!")
 
 while True:
     try:           
-        num_passwords = int(input("Amount of passwords to generate: "))
+        num_passwords = int(input("Enter the amount of passwords to generate: "))
         if num_passwords <= 0: 
             print("Must enter a positive integer to continue.")
         else:           
@@ -22,8 +22,14 @@ while True:
              break
     except ValueError:
         print("Must enter valid integer to continue.")
+
+print('''Choose character set for password from these : 
+         1. Digits
+         2. Letters
+         3. Punctuation
+         4. Exit''')
                   
-characterList = ''
+characterList = ""
 
 while True:
     choice = int(input("Pick a number "))
