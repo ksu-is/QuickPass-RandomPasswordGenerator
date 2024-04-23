@@ -28,7 +28,7 @@ def main():
         try:           
             amount = int(input("Amount of passwords to generate: "))
             if amount <= 0: 
-                print("Must enter a positive integer to continue."
+                print("Must enter a positive integer to continue.")
             else:           
                  break
         except ValueError:
@@ -37,7 +37,7 @@ def main():
         try:
             length = int(input("Enter desired password length: "))
             if length <= 0:
-                 print("Must enter a positive integer to continue."
+                 print("Must enter a positive integer to continue.")
             else:           
                  break
         except ValueError:
