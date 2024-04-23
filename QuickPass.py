@@ -7,7 +7,7 @@ while True:
     try:           
         num_passwords = int(input("Amount of passwords to generate: "))
         if num_passwords <= 0: 
-            print("Must enter a positive integer to continue."
+            print("Must enter a positive integer to continue.")
         else:           
             break
     except ValueError:
@@ -17,7 +17,7 @@ while True:
     try:
         length = int(input("Enter desired password length: "))
         if length <= 0:
-            print("Must enter a positive integer to continue." 
+            print("Must enter a positive integer to continue.")
         else:           
              break
     except ValueError:
@@ -40,39 +40,7 @@ while True:
               
 password = []
           
-<<<<<<< HEAD
-def main(): 
-    print("Welcome to QuickPass!")
-
-    while True:
-        try:           
-            amount = int(input("Amount of passwords to generate: "))
-            if amount <= 0: 
-                print("Must enter a positive integer to continue.")
-            else:           
-                 break
-        except ValueError:
-            print("Must enter valid integer to continue.")
-    while True:
-        try:
-            length = int(input("Enter desired password length: "))
-            if length <= 0:
-                 print("Must enter a positive integer to continue.")
-            else:           
-                 break
-        except ValueError:
-            print("Must enter valid integer to continue.")
-                  
-print('''Choose character set for password:
-          1. Digits
-          2. Letters
-          3. Punctuation
-          4. Exit''')
-
-for i in range(amount):
-=======
 for i in range(num_passwords):
->>>>>>> 9c6b3aa6f82479074c3dff635c3c2fad63b0e612
     randomchar = random.choice(characterList)
     password.append(randomchar)
 
