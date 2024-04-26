@@ -1,53 +1,54 @@
 import random 
 import string 
 
-print("Welcome to QuickPass!")
+def main(): 
+    print("Welcome to QuickPass!")
 
-while True:
-    try:           
-        num_passwords = int(input("Enter the amount of passwords to generate: "))
-        if num_passwords <= 0: 
-            print("Must enter a positive integer to continue.")
-        else:           
-            break
-    except ValueError:
-        print("Must enter valid integer to continue.")
+    while True:
+       try:           
+           num_passwords = int(input("Enter the amount of passwords to generate: "))
+           if num_passwords <= 0: 
+               print("Must enter a positive integer to continue.")
+           else:           
+                break
+       except ValueError:
+           print("Must enter valid integer to continue.")
               
-while True:
-    try:
-        length = int(input("Enter desired password length: "))
-        if length <= 0:
-            print("Must enter a positive integer to continue.")
-        else:           
-             break
-    except ValueError:
-        print("Must enter valid integer to continue.")
+    while True:
+       try:
+           length = int(input("Enter desired password length: "))
+           if length <= 0:
+               print("Must enter a positive integer to continue.")
+          else:           
+              break
+       except ValueError:
+           print("Must enter valid integer to continue.")
 
-print('''Choose character set for password from these : 
-         1. Digits
-         2. Letters
-         3. Punctuation
-         4. Exit''')
+    print('''Choose character set for password from these: 
+        1. Digits
+        2. Letters
+        3. Punctuation
+        4. Exit''')
                   
-characterList = ""
-
-while True:
-    choice = int(input("Pick a number "))
-    if(choice == 1):
-        characterList += string.digits
-    elif(choice == 2): 
-        characterList += string.ascii_letters
-    elif(choice == 3):      
-        characterList += string.punctuation
-    elif(choice == 4): 
-        break 
-    else: 
+def create_password(length, choice):
+    characterList = ""
+    
+    while True:
+       choice = int(input("Pick a number "))
+         if(choice == 1):
+             characterList += string.digits
+         elif(choice == 2): 
+             characterList += string.ascii_letters
+         elif(choice == 3):      
+             characterList += string.punctuation
+         elif(choice == 4): 
+             break 
+       else: 
         print("Pick a valid option to continue!")
-              
-password = [random.choice(characterList) for _ in range(length)] 
-return ''.join(password)
+      password = [random.choice(characterList) for _ in range(length)]
+      return ''.join(password)
           
 for i in range(num_passwords):
-    password = length 
+    password = create_password(length, choices) 
     print("Here are your passwords:", password)
     
