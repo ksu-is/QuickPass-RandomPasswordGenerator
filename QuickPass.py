@@ -43,8 +43,6 @@ while True:
         break 
     else: 
         print("Pick a valid option to continue!")
-password = [random.choice(characterList) for _ in range(length)]
-return ''.join(password)
           
 for i in range(num_passwords):
     password = length 
