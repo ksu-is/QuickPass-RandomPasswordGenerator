@@ -43,8 +43,10 @@ while True:
         break 
     else: 
         print("Pick a valid option to continue!")
-          
-for i in range(num_passwords):
-    password = length 
+              
+for pwd in range(num_passwords):
+    password = '' 
+    for c in range(length):
+        passwords += random.choice(characterList)
     print("Here are your passwords:", password)
     
