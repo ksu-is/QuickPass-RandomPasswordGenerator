@@ -10,7 +10,7 @@ while True:
             print("Must enter a positive integer to continue.")
         else:
             break
-     except ValueError:
+    except ValueError:
             print("Must enter valid integer to continue.")
               
 while True:
@@ -20,7 +20,7 @@ while True:
             print("Must enter a positive integer to continue.")
         else:           
             break
-     except ValueError:
+    except ValueError:
          print("Must enter valid integer to continue.")
 
 print('''Choose character set for password from these: 
