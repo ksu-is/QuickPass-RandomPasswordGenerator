@@ -8,10 +8,10 @@ while True:
         num_passwords = int(input("Enter the amount of passwords to generate: "))
         if num_passwords <= 0: 
             print("Must enter a positive integer to continue.")
-        elif:           
+        elif:
             break
         else:
-         print("Must enter valid integer to continue.")
+            print("Must enter valid integer to continue.")
               
 while True:
     try:
