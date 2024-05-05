@@ -39,8 +39,8 @@ while True:
         characterList += string.ascii_letters
     elif choice == '3':      
         characterList += string.punctuation
-    elif choice == '4': 
-        break 
+    elif choice == '4':
+      break 
     else: 
         print("Pick a valid option to continue!")
               
